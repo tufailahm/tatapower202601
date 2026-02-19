@@ -1,6 +1,10 @@
 "# tatapower202601" 
 
 
+https://codeshare.io/tatapower
+
+
+
 Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. 
 The creator was very specific that he has to create an easy language, so he removed the concepts of braces and introduced indentations.
 It was created by Guido van Rossum during 1985- 1990.
@@ -39,6 +43,26 @@ Why is Python so Popular?
 8) Automation 
 
 
+
+
+
+
+
+
+
+Variable
+-----------------
+
+
+
+
+
+
+
+
+
+
+
 str= "Hello Rakuten"
 name ="Tufail"
 salary = 98000
@@ -57,9 +81,27 @@ print(str, " , your intern salary is ",salary);
 print(f"{str}  , your intern salary is {salary}");
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Python Identifiers
 
-A Python identifier is a name used to identify a variable, function, class, module, or other object. An identifier starts with a letter A to Z or a to z, or an underscore (_) followed by zero or more letters, underscores and digits (0 to 9).
+A Python identifier is a name used to identify a variable, function, class, module, or other object. 
+
+An identifier starts with a letter A to Z or a to z, or an underscore (_) followed by zero or more letters, underscores and digits (0 to 9).
 Python does not allow punctuation characters such as @, $, and % within identifiers. Python is a case sensitive programming language
 
 Here are naming conventions for Python identifiers:
@@ -69,7 +111,8 @@ Starting an identifier with two leading underscores indicates a strongly private
 If the identifier also ends with two trailing underscores, the identifier is a language-defined special name. ( __num__ )
 
 
-Python Keywords
+Python Keywords - special words in a langauges
+
 And
 exec
 Not
@@ -104,7 +147,10 @@ yield
 
 
 Variables and Literals
-A variable is a named location used to store data in the memory. Here's an example:
+A variable is a named location used to store data in the memory. 
+
+
+Here's an example:
 Python supports int and float
 num1=90
 marks=90.8
@@ -345,11 +391,11 @@ Numeric Data Types: Numeric data types in Python are used to represent numerical
 Integer (int): Integers are whole numbers without any decimal points. They can be positive or negative.
 Floating-Point (float): Floating-point numbers represent decimal values. They can be positive or negative and may contain a decimal point.
 
-Complex (complex): Complex numbers are used to represent numbers with a real and imaginary part. They are written in the form of a + bj, where a is the real part and b is the imaginary part.
-
 String Data Type(str): Represents a sequence of characters enclosed in single quotes (‘ ‘) or double quotes (” “), such as “Hello, World!”, ‘Python’.
 
 Boolean Data Type(bool): Represents either True or False, used for logical operations and conditions.
+
+Complex (complex): Complex numbers are used to represent numbers with a real and imaginary part. They are written in the form of a + bj, where a is the real part and b is the imaginary part.
 
 Collection Data Types:
 list: Represents an ordered and mutable collection of items, enclosed in square brackets ([]).
@@ -498,6 +544,58 @@ For Loop
 
 for i in range(1,5):
     print(i, " ", end="")
+
+
+
+
+
+break
+
+
+
+
+pip install python-docx
+
+
+
+
+Reading from docx file - word file
+
+
+from docx import Document
+
+doc = Document("h:\\hello.docx")
+
+for para in doc.paragraphs:
+    print(para.text)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
